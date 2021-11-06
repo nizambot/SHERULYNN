@@ -1422,7 +1422,6 @@ menunya = `╭─❒ 「 Bot Info 」 ❒
 ├ ${prefix}bisakah
 ├ ${prefix}citacita
 ├ ${prefix}cerpen
-├ ${prefix}ceritahoror
 ├ ${prefix}artimimpi
 ├ ${prefix}ramalnomer
 ├ ${prefix}caripesan [ _teks|jumlah_ ]
@@ -3385,8 +3384,8 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 				  break
 		case 'ramalnomer':  
 			     if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-				if (args.length < 1) return reply('[❗] CONTOH??\n*${prefix} ramalnomer 08123456789*')
-                    F = body.slice(11)
+				if (args.length < 1) return reply('[❗] CONTOH??\n*${prefix}ramalnomer 08123456789*')
+                    F = body.slice(7)
                     anu = await fetchJson(`https://psyco-api.herokuapp.com/api/primbon/nomorhoki?apikey=PsycoBOTZ&query=${F}`)
                     anu1 = `➻ *RAMAL* : ${anu.result}`
                     reply(anu1)
@@ -3394,7 +3393,7 @@ break
 		case 'artimimpi':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 				if (args.length < 1) return reply('Mimpi Mu Apa?')
-anu = await fetchJson(`https://psyco-api.herokuapp.com/api/primbon/artimimpi?apikey=PsycoBOTZ&query=${body.slice(11)}`)
+anu = await fetchJson(`https://psyco-api.herokuapp.com/api/primbon/artimimpi?apikey=PsycoBOTZ&query=${body.slice(7)}`)
 teks = `➻ *MIMPI* : ${anu.result}`
 reply(teks)
 break
@@ -3456,18 +3455,8 @@ break
                     ini_txt = `Title : ${get_result.title}\n`
                     ini_txt += `Creator : ${get_result.creator}\n`
                     ini_txt += `Story :\n${get_result.cerpen}`
-                    denz.sendMessage(from, buff, image, {quoted: ftok, caption: ini_txt})
+                    denz.sendMessage(from, get_result, image, {quoted: ftok, caption: ini_txt})
                     break
-case 'ceritahoror':
-       if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/ceritahoror?apikey=YTRAMLANID`)
-                    get_result = get_result.result
-                    ini_txt = `Title : ${get_result.title}\n`
-                    ini_txt += `Desc : ${get_result.desc}\n`
-                    ini_txt += `Story :\n${get_result.story}\n`
-                    thumbnail = await getBuffer(get_result.thumbnail)
-                    denz.sendMessage(from, thumbnail, image, { quoted: ftok, caption: ini_txt })
-                     break 
 					case 'infogempa':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 					anu = await fetchJson(`https://bx-hunter.herokuapp.com/api/info/gempa?apikey=${HunterApi}`, {method: 'get'})
