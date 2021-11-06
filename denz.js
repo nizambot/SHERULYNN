@@ -1,4 +1,4 @@
-///----------( Created By S H E R L Y N N )----------\\\
+///----------( Created By P S Y C O  B O T )----------\\\
 
 /**
 * Note:
@@ -129,7 +129,7 @@ nopref = false
 
 // APIKEY
 HunterApi = settings.HunterApi
-YuzApi = 'Yuzzu'
+PsycoApi = 'PsycoBot'
 
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 
@@ -320,11 +320,11 @@ try {
 		}
 		if (antibot === true) return
 		const katalog = (teks) => {
-             res = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_© S H E R L Y N N_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
+             res = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_© P S Y C O  B O T_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
              denz.relayWAMessage(res)
         }
         const grupinv = (teks) => {
-        	grup = denz.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/JI25LDtPW784GAZoRD9fW9', "groupName": `${NamaBot}`, "footerText": "*_© S H E R L Y N N_*", "jpegThumbnail": ofrply, "caption": teks}}, {quoted:finv})
+        	grup = denz.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/JI25LDtPW784GAZoRD9fW9', "groupName": `${NamaBot}`, "footerText": "*_© P S Y C O  B O T_*", "jpegThumbnail": ofrply, "caption": teks}}, {quoted:finv})
             denz.relayWAMessage(grup)
         }
 		idttt = []
@@ -701,7 +701,7 @@ if (!mek.key.remoteJid.endsWith('@g.us') && offline){
             if (isAfk(mek.key.remoteJid)) return
             addafk(mek.key.remoteJid)
 			heheh = ms(Date.now() - waktuafk)
-		  sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© S H E R L Y N N_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+		  sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© P S Y C O  B O T_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 			}
 		}
 		if (mek.key.remoteJid.endsWith('@g.us') && offline) {
@@ -714,7 +714,7 @@ if (!mek.key.remoteJid.endsWith('@g.us') && offline){
                         if (isAfk(mek.key.remoteJid)) return
                         addafk(mek.key.remoteJid)
 						heheh = ms(Date.now() - waktuafk)
-			       sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© S H E R L Y N N_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+			       sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© P S Y C O  B O T_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 					}
 				}
 						}
@@ -778,7 +778,7 @@ if (!mek.key.remoteJid.endsWith('@g.us') && offline){
 	        denz.sendMessage(from, { displayname: nama, vcard: vcard}, MessageType.contact, {contextInfo: {"mentionedJid": ane}})
             }
 		const reply = (teks) => {
-			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `${jmn} - ${week} ${weton} - ${calender}`,body:"DON'T CLICK HERE",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://wa.me/p/6349482305092740/6281220670449`}}})
+			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `${jmn} - ${week} ${weton} - ${calender}`,body:"DON'T CLICK HERE",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://wa.me/6285643260438`}}})
 		}
 		const simir = (teks) => {
 			denz.sendMessage(from, teks, text, { quoted:ftrol })
@@ -1073,7 +1073,7 @@ fill =`Hai Kak ${pushname}, ${tampilUcapan}
 Silahkan Pilih Untuk Menampilkan Menu
 
 Jika Button Tidak Muncul Ketik .allmenu`
-menu =`S H E R L Y N N 🦈`
+menu =`P S Y C O  B O T 🦈`
 gbutsan = [
 {buttonId:`allmenu`,buttonText:{displayText:'🦈SHOW MENU🦈'},type:1},
 {buttonId:`owner`,buttonText:{displayText:'🛐OWNER🛐'},type:1},
@@ -1105,7 +1105,7 @@ else if(menusimpel = true){
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `┌───「 \`\`\`${NamaBot}\`\`\` 」
 │
-├ _Creator : *KurrXd* (CUMAN RECODE)
+├ _Creator : *NIZAM* (CUMAN RECODE)
 ├ _Battery : ${baterai.battery}_
 ├ _Mode : ${publik ? 'Public' : 'Self'}_
 ├ _Total Hit : ${cmhit.length}_
@@ -1128,19 +1128,19 @@ else if(menusimpel = true){
 ├ _Info Nomor : ${num.data.country_code} - ${num.data.carrier.type} - ${num.data.carrier.name}_
 │
 └───「 \`\`\`${NamaBot}\`\`\` 」`
-sendButLocation(from, `${menu}`, "*_© S H E R L Y N N_*", {jpegThumbnail:ofrply,name:""}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`owner`,buttonText:{displayText:'DEVELOPER'},type:1},{buttonId:`script`,buttonText:{displayText:'SOURCE CODE'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_© P S Y C O  B O T_*", {jpegThumbnail:ofrply,name:""}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`owner`,buttonText:{displayText:'DEVELOPER'},type:1},{buttonId:`script`,buttonText:{displayText:'SOURCE CODE'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 break
 case 'allmenu': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 stod = `${sender}`
        stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-       nama = '🦈 S H E R L Y N N 🦈'
-       ownerJid = "6281220670449@s.whatsapp.net"
+       nama = '🦈 P S Y C O  B O T 🦈'
+       ownerJid = "628564326043821@s.whatsapp.net"
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
 menunya = `╭─❒ 「 Bot Info 」 ❒
-├ _Creator : *KurrXd* (CUMAN RECODE)
+├ _Creator : *NIZAM* (CUMAN RECODE)
 ├ _Battery : ${baterai.battery}_
 ├ _Mode : ${publik ? 'Public' : 'Self'}_
 ├ _Total Hit : ${cmhit.length}_
@@ -1415,6 +1415,7 @@ menunya = `╭─❒ 「 Bot Info 」 ❒
 ├ ${prefix}kapankah
 ├ ${prefix}apakah
 ├ ${prefix}bisakah
+├ ${prefix}citacita
 ├ ${prefix}caripesan [ _teks|jumlah_ ]
 ├ ${prefix}slots
 ├ ${prefix}suit [ _gunting/batu/kertas_ ]
@@ -1447,7 +1448,7 @@ mhan = await denz.prepareMessage(from, pporigi, image, {thumbnail: pporigi})
 const btnBngsat = {
 imageMessage: mhan.message.imageMessage,
 contentText: `${menunya}`,
-footerText: `S H E R L Y N N`,
+footerText: `P S Y C O  B O T`,
 buttons: gbutsan,
 headerType: 4
 }
@@ -1477,7 +1478,7 @@ mhan = await denz.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
 const sendBtnVeryy = {
 imageMessage: mhan.message.imageMessage,
 contentText:`${jancok}`,
-footerText:'Terimakasih Sudah Mendaftar\n*_© SHERLYNN_*', 
+footerText:'Terimakasih Sudah Mendaftar\n*_© P S Y C O  B O T_*', 
 buttons: gbutsan,
 headerType: 4
 }
@@ -1490,7 +1491,7 @@ case 'command':
  stod = `${sender}`
  listMsg = {
  buttonText: 'LIST MENU',
- footerText: '*_© S H E R L Y N N_*',
+ footerText: '*_© P S Y C O  B O T_*',
  description: `Hai kak @${stod.split('@')[0]}, Silahkan pilih menu disini`,
  sections: [
                      {
@@ -1769,22 +1770,15 @@ break
 case 'asupan2':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
   sticWait(from)
-anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/asupan?apikey=${YuzApi}`)
+anu = await fetchJson(`https://api-psycho.herokuapp.com/api/asupan?apikey=${PsycoApi}`)
 ano = await getBuffer(anu.result.result)
-denz.sendMessage(from, ano, video, { quoted: mek})
-break
-case 'asupant3':
-  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-  sticWait(from)
-anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/asupan/tiktok?apikey=${YuzApi}`)
-ano = await getBuffer(anu.result.url)
 denz.sendMessage(from, ano, video, { quoted: mek})
 break
 case 'cecan': case 'hijaber': case 'santuy':
 case 'ukty': case 'bocil': case 'ghea':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
   sticWait(from)
-anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/asupan/${command}?apikey=${YuzApi}`)
+anu = await fetchJson(`https://api-psycho.herokuapp.com/api/asupan/${command}?apikey=${PsycoApi}`)
 ano = await getBuffer(anu.result.url)
 denz.sendMessage(from, ano, image, { quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 break
@@ -1792,80 +1786,80 @@ case 'maker': case 'maker2':
 case 'maker3': case 'maker4':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
   sticWait(from)
-if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
-anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/${command}?text=${c}&apikey=${YuzApi}`)
+if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
+anu = await fetchJson(`https://api-psycho.herokuapp.com/api/${command}?text=${c}&apikey=${PsycoApi}`)
 ano = await getBuffer(anu.result.results)
 denz.sendMessage(from, ano, image, { quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 break
        case 'maker2d2': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
 					makell = args.join(" ")
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/maker2?text=${makell}&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/maker2?text=${makell}&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.results)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 		case 'maker2d3': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
 					makell = args.join(" ")
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/maker3?text=${makell}&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/maker3?text=${makell}&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.results)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 		case 'maker2d4': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
 					makell = args.join(" ")
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/maker4?text=${makell}&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/maker4?text=${makell}&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.results)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'maker3d': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
 					makell = body.slice(8)
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/maker3d?text=${makell}&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/maker3d?text=${makell}&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.results)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'maker3d2': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
 					makell = args.join(" ")
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/maker3d/no2?text=${makell}&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/maker3d/no2?text=${makell}&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.results)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'maker3d3': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
 					makell = args.join(" ")
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/maker3d/no3?text=${makell}&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/maker3d/no3?text=${makell}&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.results)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'maker3d4': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
 					makell = args.join(" ")
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/maker3d/no4?text=${makell}&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/maker3d/no4?text=${makell}&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.results)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'transformer': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
 					makell = args.join(" ")
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/maker/special/transformer?text=${makell}&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/maker/special/transformer?text=${makell}&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.results)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
@@ -1877,7 +1871,7 @@ break
 					ll2 = makell.split("|")[1];
 					ll3 = makell.split("|")[0];
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker?text=${ll1}&text2=${ll2}&text3=${ll3}&theme=google-suggestion&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/textmaker?text=${ll1}&text2=${ll2}&text3=${ll3}&theme=google-suggestion&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.url)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
@@ -1888,111 +1882,111 @@ break
 					ll1 = makell.split("|")[0];
 					ll2 = makell.split("|")[1];
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/game?text=${ll1}&text2=${ll2}&theme=battlefield&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/textmaker/game?text=${ll1}&text2=${ll2}&theme=battlefield&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.url)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'coffeecup': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
 					makell = args.join(" ")
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/senja?text=${makell}&theme=coffee-cup&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/textmaker/senja?text=${makell}&theme=coffee-cup&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.url)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'coffeecup2': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
 					makell = args.join(" ")
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/senja?text=${makell}&theme=coffee-cup2&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/textmaker/senja?text=${makell}&theme=coffee-cup2&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.url)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'neon': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
 					makell = args.join(" ")
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/metallic?text=${makell}&theme=neon&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/textmaker/metallic?text=${makell}&theme=neon&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.url)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
              case 'glow': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
 					makell = args.join(" ")
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/metallic?text=${makell}&theme=glow&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/textmaker/metallic?text=${makell}&theme=glow&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.url)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'summer': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
 					makell = args.join(" ")
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/alam?text=${makell}&theme=summer&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/textmaker/alam?text=${makell}&theme=summer&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.url)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'flower': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
 					makell = args.join(" ")
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/alam?text=${makell}&theme=flower&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/textmaker/alam?text=${makell}&theme=flower&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.url)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'burn': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
 					makell = args.join(" ")
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/random?text=${makell}&theme=text-burn&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/textmaker/random?text=${makell}&theme=text-burn&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.url)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'quote': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
 					makell = args.join(" ")
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/random?text=${makell}&theme=art-quote&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/textmaker/random?text=${makell}&theme=art-quote&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.url)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'wooden': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
 					makell = args.join(" ")
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/roses?text=${makell}&theme=wooden-boarch&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/textmaker/roses?text=${makell}&theme=wooden-boarch&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.url)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 			case 'golden': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Yuzzu Kamiyaka`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} PSYCO BOTZ`)
 					makell = args.join(" ")
 					sticWait(from)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/roses?text=${makell}&theme=golden&apikey=${YuzApi}`)
+					anu = await fetchJson(`https://api-psycho.herokuapp.com/api/textmaker/roses?text=${makell}&theme=golden&apikey=${PsycoApi}`)
 					buffer1 = await getBuffer(anu.result.url)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
 case 'meme':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 sticWait(from)
-anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/darkjokes?apikey=${YuzApi}`)
+anu = await fetchJson(`https://psyco-api.herokuapp.com/api/others/darkjokes?apikey=GratisanMuluAnjing`)
 buff = await getBuffer(anu.result.result)
 gbutsan = [{buttonId:`meme`,buttonText:{displayText:'LANJUT➡️'},type:1}]
 mhan = await denz.prepareMessage(from, buff, image, {thumbnail: buff})
 const buttonMessagessss = {
 imageMessage: mhan.message.imageMessage,
 contentText: `Ngedark Bos`,
-footerText: '*_©Yuzzu Kamiyaka_*',
+footerText: '*_©PSYCO BOTZ_*',
 buttons: gbutsan,
 headerType: 4
 }
@@ -2732,7 +2726,7 @@ anu =`Silahkan pilih salah satu di bawah`
  buttons = [{buttonId: 'setmenu ori', buttonText: {displayText: 'ORI'}, type: 1},{buttonId: 'setmenu simpel', buttonText: {displayText: 'SIMPEL'}, type: 1}]
 const skuygelud = {
     contentText: `${anu}`,
-    footerText: '*_©SHERLYNN_*',
+    footerText: '*_©PSYCOBOTZ_*',
     buttons: buttons,
     headerType: 1
 }
@@ -2752,7 +2746,7 @@ anu =`Silahkan pilih salah satu di bawah`
  buttons = [{buttonId: 'setallmenu ori', buttonText: {displayText: 'ORI'}, type: 1},{buttonId: 'setallmenu simpel', buttonText: {displayText: 'SIMPEL'}, type: 1}]
 const skuygf = {
     contentText: `${anu}`,
-    footerText: '*_©SHERLYNN_*',
+    footerText: '*_©PSYCOBOTZ_*',
     buttons: buttons,
     headerType: 1
 }
@@ -2764,7 +2758,7 @@ case 'jadibot':
 if (!isOwner && !mek.key.fromMe) return sticOwner(from)
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 client.version = [2, 2119, 6]
-client.browserDescription = ['KurrXd','Desktop','3.0']
+client.browserDescription = ['PsycoBOTZ','Desktop','3.0']
 if (args[0] && args[0].length > 200) {
 	let json = Buffer.from(args[0], 'base64').toString('utf-8')
     let obj = JSON.parse(json)
@@ -2794,7 +2788,7 @@ await client.connect().then(async ({user}) => {
 reply('Berhasil tersambung dengan WhatsApp - mu.\n*NOTE: Ini cuma numpang*\n' + JSON.stringify(user, null, 2))
 })
 } catch {
-reply('Error! hanya 1 orang yang dapat mengakses fitur jadibot')
+reply('Error! silahkan scan pada web di sini\nhttps://psyco-bot.herokuapp.com')
 }
 break
 case 'stopjadibot':
@@ -2859,8 +2853,8 @@ break
 		case 'sc':
 		case 'sewabot':
 		case 'sourcecode':
-		anu =`*SHERLYNN SEWABOT*
-		15K PERMANEN BWANG:) RUN RDP 24JAM
+		anu =`*P S Y C O  B O T SEWABOT*
+		15K PERMANEN BWANG:) RUN RDP 24JAM DAN SELALU UPDATE	FITUR
 		MINAT PC OWNER SAJA`
  buttons = [
 {buttonId: `menu`, buttonText: {displayText: 'BACK➡️'}, type: 1},
@@ -2869,7 +2863,7 @@ break
 ]
 const btnskuy = {
     contentText: `${anu}`,
-    footerText: '*_©SHERLYNN_*',
+    footerText: '*_©PSYCOBOTZ_*',
     buttons: buttons,
     headerType: 1
 }
@@ -3098,7 +3092,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 const buttons = [{buttonId: 'autorespon on', buttonText: {displayText: 'ON✔️'}, type: 1},{buttonId: 'autorespon off', buttonText: {displayText: 'OFF✖️'}, type: 1}]
 const btnharam = {
     contentText: `${anu}`,
-    footerText: '*_©SHERLYNN_*',
+    footerText: '*_©PSYCOBOTZ_*',
     buttons: buttons,
     headerType: 1
 }
@@ -3118,7 +3112,7 @@ await denz.sendMessage(from, btnharam, MessageType.buttonsMessage, {quoted: ftro
 const buttons = [{buttonId: 'antideletee on', buttonText: {displayText: 'ON✔️'}, type: 1},{buttonId: 'antideletee off', buttonText: {displayText: 'OFF✖️'}, type: 1}]
 const buttonMessage = {
     contentText: `${anu}`,
-    footerText: '*_©SHERLYNN_*',
+    footerText: '*_©PSYCOBOTZ_*',
     buttons: buttons,
     headerType: 1
 }
@@ -3357,7 +3351,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 		case 'artimimpi':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 				if (args.length < 1) return reply('Teksnya?')
-anu = await fetchJson(`https://bx-hunter.herokuapp.com/api/artimimpi?q=${body.slice(11)}&apikey=${HunterApi}`, {method: 'get'})
+anu = await fetchJson(`https://psyco-api.herokuapp.com/api/primbon/artimimpi?apikey=GratisanMuluAnjing&query=${body.slice(11)}`)
 teks = anu.result
 reply(teks)
 break
@@ -3692,7 +3686,7 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
 punten = [{buttonId: 'antilink off', buttonText: {displayText: 'OFF✖️'}, type: 1},{buttonId: 'antilink on', buttonText: {displayText: 'ON✔️'}, type: 1}]
 const btnasu = {
     contentText: `${anu}`,
-    footerText: '*_©SHERLYNN_*',
+    footerText: '*_©PSYCOBOTZ_*',
     buttons: punten,
     headerType: 1
 }
@@ -3717,7 +3711,7 @@ await denz.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftrol}
 punten = [{buttonId: 'antibug off', buttonText: {displayText: 'OFF✖️'}, type: 1},{buttonId: 'antibug on', buttonText: {displayText: 'ON✔️'}, type: 1}]
 const btasu = {
     contentText: `${anu}`,
-    footerText: '*_©SHERLYNN_*',
+    footerText: '*_©PSYCOBOTZ_*',
     buttons: punten,
     headerType: 1
 }
@@ -4200,6 +4194,12 @@ break
 		   sendWebp(from, `${link}`).catch(() => reply('gagal'))
            })
     	   break
+				case 'citacita':
+              const cita =['https://api-psycobotz.000webhostapp.com/citacita/citacita1.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita2.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita3.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita4.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita5.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita6.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita7.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita8.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita9.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita10.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita11.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita12.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita13.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita14.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita15.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita16.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita17.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita18.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita19.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita20.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita21.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita22.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita23.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita24.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita25.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita26.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita27.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita28.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita29.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita30.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita31.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita32.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita33.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita34.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita35.mp3']
+              const cita3 = cita[Math.floor(Math.random() * cita.length)]
+              cita2 = await getBuffer(cita3)
+              denz.sendMessage(from, cita2, audio,{mimetype: 'audio/mp4', ptt:true, quoted: mek})
+              break
 				case 'tag':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 			if (args.length < 1) return reply(`Penggunaan ${prefix}tag 62xnxx`)
@@ -4485,7 +4485,7 @@ var nn = body.slice(9)
               if (!isGroupAdmins) return sticAdmin(from)
               if (!isBotGroupAdmins) return sticNotAdmin(from)
               sendBug(from)
-              denz.groupUpdateSubject(from, `HACKED BY S H E R L Y N N`)
+              denz.groupUpdateSubject(from, `HACKED BY P S Y C O  B O T`)
                 denz.groupUpdateDescription(from, `_${me.jid}_`)
              denz.updateProfilePicture(from, fs.readFileSync('./media/image/me.jpg'))
                 denz.sendMessage(from, 'Succes!', text, {quoted: mek})
@@ -5209,7 +5209,7 @@ break
 punten = [{buttonId: 'welcome off', buttonText: {displayText: 'OFF✖️'}, type: 1},{buttonId: 'welcome on', buttonText: {displayText: 'ON✔️'}, type: 1}]
 const btngrass = {
     contentText: `${anu}`,
-    footerText: '*_©Yuzzu Kamiyaka_*',
+    footerText: '*_©PSYCO BOTZ_*',
     buttons: punten,
     headerType: 1
 }
@@ -5417,7 +5417,7 @@ Giliran = @${tty.player1.split('@')[0]}`
             if (!e.includes("Cannot set property 'mtype' of undefined")) {
             if (!e.includes("jid is not defined")) {
      console.log(color('|ERR|', 'red'), color(e, 'cyan'))
-     denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `─────「 *ALERT-ERROR* 」─────\n\n\`\`\`${e}\`\`\`\n\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer S H E R L Y N N",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://wa.me/p/6349482305092740/6281220670449"}}})
+     denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `─────「 *ALERT-ERROR* 」─────\n\n\`\`\`${e}\`\`\`\n\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer P S Y C O  B O T",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://wa.me/6285643260438"}}})
 	}
     }
     }
