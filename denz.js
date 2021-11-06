@@ -1229,6 +1229,16 @@ menunya = `╭─❒ 「 Bot Info 」 ❒
 ├ ${prefix}tutuptime [ _detik/menit/jam_ ]
 ├ ${prefix}nano [ _nama file_ ]
 │
+├─❒ RANDOM
+├ ${prefix}quotes
+├ ${prefix}dilan
+├ ${prefix}islami
+├ ${prefix}katailham
+│
+├─❒ PRIMBON
+├ ${prefix}artimimpi
+├ ${prefix}ramalnomer
+│
 ├─❒ DOWNLOAD
 ├ ${prefix}infogempa
 ├ ${prefix}herolist
@@ -1250,7 +1260,6 @@ menunya = `╭─❒ 「 Bot Info 」 ❒
 ├ ${prefix}lirik [ _judul_ ]
 ├ ${prefix}tourl [ _reply image/video_ ]
 ├ ${prefix}resepmasakan [ _judul_ ]
-├ ${prefix}artimimpi [ _teks_ ]
 ├ ${prefix}bilangangka [ _angka_ ]
 ├ ${prefix}kalkulator [ _angka_ ]
 ├ ${prefix}fancytext [ _teks_ ]
@@ -1992,13 +2001,13 @@ break
 case 'meme':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 sticWait(from)
-anu = await fetchJson(`https://psyco-api.herokuapp.com/api/others/darkjokes?apikey=PsycoBOTZ`)
+anu = await fetchJson(`https://psyco-api.herokuapp.com/api/others/meme?apikey=PsycoBOTZ`)
 buff = await getBuffer(anu.result.result)
 gbutsan = [{buttonId:`meme`,buttonText:{displayText:'LANJUT➡️'},type:1}]
 mhan = await denz.prepareMessage(from, buff, image, {thumbnail: buff})
 const buttonMessagessss = {
 imageMessage: mhan.message.imageMessage,
-contentText: `Ngedark Bos`,
+contentText: `Ngememe Bos`,
 footerText: '*_©PSYCO BOTZ_*',
 buttons: gbutsan,
 headerType: 4
@@ -3382,11 +3391,43 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 				reply(mess.error.api)
 			}
 				  break
+			    case 'dilan':
+			    if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+                    quotedilan = await fetchJson(`https://psyco-api.herokuapp.com/api/random/bacotandilan?apikey=PsycoBOTZ`)
+                    reply(quotedilan.result)
+break
+               case 'katailham':
+			    if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+                    quoteilham = await fetchJson(`https://psyco-api.herokuapp.com/api/random/katailham?apikey=PsycoBOTZ`)
+                    reply(quotedilham.result)
+break
+                case 'islami':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+                    quotedislam = await fetchJson(`https://psyco-api.herokuapp.com/api/random/quotesislami?apikey=PsycoBOTZ`)
+                    reply(quotedislam.result)
+break
+                  case 'quotes':
+				       if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+                    quotes = await fetchJson(`https://psyco-api.herokuapp.com/api/random/quotes?apikey=PsycoBOTZ`)
+                    quotes = quotes.result
+                    author = quotes.by
+                    quotes = quotes.quote
+                    reply(`_${quotes}_\n\n by :${author}*`)
+break
+		case 'ramalnomer':  
+			     if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+				if (args.length < 1) return reply('[❗] CONTOH??\n*${prefix}${command} 08123456789*')
+                    F = body.slice(12)
+                    anu = await fetchJson(`https://psyco-api.herokuapp.com/api/primbon/nomorhoki?apikey=PsycoBOTZ&query=${F}`)
+                    anu1 = `➻ *RAMAL* : ${anu.result}`
+                    reply(anu1)
+break
 		case 'artimimpi':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-				if (args.length < 1) return reply('Teksnya?')
-anu = await fetchJson(`https://psyco-api.herokuapp.com/api/primbon/artimimpi?apikey=PsycoBOTZ&query=${body.slice(11)}`)
-teks = anu.result
+				if (args.length < 1) return reply('Mimpi Mu Apa?')
+tod = ${body.slice(12)}
+anu = await fetchJson(`https://psyco-api.herokuapp.com/api/primbon/artimimpi?apikey=PsycoBOTZ&query=${tod}`)
+teks = `➻ *MIMPI* : ${anu.result}`
 reply(teks)
 break
 				case 'fancytext':
@@ -3442,7 +3483,7 @@ break
 					break 
             case 'cerpen':
 		if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/cerpen?apikey=${setting.lolkey}`)
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/cerpen?apikey=YTRAMLANID`)
                     get_result = get_result.result
                     ini_txt = `Title : ${get_result.title}\n`
                     ini_txt += `Creator : ${get_result.creator}\n`
@@ -3451,13 +3492,13 @@ break
                     break
 case 'ceritahoror':
        if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/ceritahoror?apikey=${setting.lolkey}`)
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/ceritahoror?apikey=YTRAMLANID`)
                     get_result = get_result.result
                     ini_txt = `Title : ${get_result.title}\n`
                     ini_txt += `Desc : ${get_result.desc}\n`
                     ini_txt += `Story :\n${get_result.story}\n`
                     thumbnail = await getBuffer(get_result.thumbnail)
-                    denz.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
+                    denz.sendMessage(from, thumbnail, image, { quoted: ftok, caption: ini_txt })
                      break 
 					case 'infogempa':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
