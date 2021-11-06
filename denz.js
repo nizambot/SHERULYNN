@@ -1229,16 +1229,6 @@ menunya = `╭─❒ 「 Bot Info 」 ❒
 ├ ${prefix}tutuptime [ _detik/menit/jam_ ]
 ├ ${prefix}nano [ _nama file_ ]
 │
-├─❒ RANDOM
-├ ${prefix}quotes
-├ ${prefix}dilan
-├ ${prefix}islami
-├ ${prefix}katailham
-│
-├─❒ PRIMBON
-├ ${prefix}artimimpi
-├ ${prefix}ramalnomer
-│
 ├─❒ DOWNLOAD
 ├ ${prefix}infogempa
 ├ ${prefix}herolist
@@ -1433,6 +1423,8 @@ menunya = `╭─❒ 「 Bot Info 」 ❒
 ├ ${prefix}citacita
 ├ ${prefix}cerpen
 ├ ${prefix}ceritahoror
+├ ${prefix}artimimpi
+├ ${prefix}ramalnomer
 ├ ${prefix}caripesan [ _teks|jumlah_ ]
 ├ ${prefix}slots
 ├ ${prefix}suit [ _gunting/batu/kertas_ ]
@@ -3391,33 +3383,10 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 				reply(mess.error.api)
 			}
 				  break
-			    case 'dilan':
-			    if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    quotedilan = await fetchJson(`https://psyco-api.herokuapp.com/api/random/bacotandilan?apikey=PsycoBOTZ`)
-                    reply(quotedilan.result)
-break
-               case 'katailham':
-			    if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    quoteilham = await fetchJson(`https://psyco-api.herokuapp.com/api/random/katailham?apikey=PsycoBOTZ`)
-                    reply(quotedilham.result)
-break
-                case 'islami':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    quotedislam = await fetchJson(`https://psyco-api.herokuapp.com/api/random/quotesislami?apikey=PsycoBOTZ`)
-                    reply(quotedislam.result)
-break
-                  case 'quotes':
-				       if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-                    quotes = await fetchJson(`https://psyco-api.herokuapp.com/api/random/quotes?apikey=PsycoBOTZ`)
-                    quotes = quotes.result
-                    author = quotes.by
-                    quotes = quotes.quote
-                    reply(`_${quotes}_\n\n by :${author}*`)
-break
 		case 'ramalnomer':  
 			     if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-				if (args.length < 1) return reply('[❗] CONTOH??\n*${prefix}${command} 08123456789*')
-                    F = body.slice(12)
+				if (args.length < 1) return reply('[❗] CONTOH??\n*${prefix} ramalnomer 08123456789*')
+                    F = body.slice(11)
                     anu = await fetchJson(`https://psyco-api.herokuapp.com/api/primbon/nomorhoki?apikey=PsycoBOTZ&query=${F}`)
                     anu1 = `➻ *RAMAL* : ${anu.result}`
                     reply(anu1)
@@ -3425,7 +3394,7 @@ break
 		case 'artimimpi':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 				if (args.length < 1) return reply('Mimpi Mu Apa?')
-anu = await fetchJson(`https://psyco-api.herokuapp.com/api/primbon/artimimpi?apikey=PsycoBOTZ&query=${body.slice(12)}`)
+anu = await fetchJson(`https://psyco-api.herokuapp.com/api/primbon/artimimpi?apikey=PsycoBOTZ&query=${body.slice(11)}`)
 teks = `➻ *MIMPI* : ${anu.result}`
 reply(teks)
 break
