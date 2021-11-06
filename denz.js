@@ -1002,13 +1002,13 @@ if (!settings.autorecording) {
 denz.updatePresence(from, Presence.recording)
 }
 if (budy.startsWith('Denz')){
-sendButMessage(from, `${JSON.stringify(me, null, 2)}`, "*_© KurrXd_*", [{buttonId: 'igm', buttonText: {displayText: 'Instagram'}, type: 1},{buttonId: 'ytm', buttonText: {displayText: 'YouTube'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+sendButMessage(from, `${JSON.stringify(me, null, 2)}`, "*_© NIZAM_*", [{buttonId: 'igm', buttonText: {displayText: 'Instagram'}, type: 1},{buttonId: 'ytm', buttonText: {displayText: 'YouTube'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 }
 if(isButton == 'igm'){
-reply('http://instagram.com/kurrsadboy')
+reply('http://instagram.com/xnoob_ganz')
 }
 if(isButton == 'ytm'){
-reply('http://youtube.com/c/KurrXd')
+reply('http://youtube.com/c/PINOMODZ')
 }
 
    const sotoy = [
@@ -1136,7 +1136,7 @@ case 'allmenu':
 stod = `${sender}`
        stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
        nama = '🦈 P S Y C O  B O T 🦈'
-       ownerJid = "628564326043821@s.whatsapp.net"
+       ownerJid = "6285643260438@s.whatsapp.net"
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
 menunya = `╭─❒ 「 Bot Info 」 ❒
@@ -1337,7 +1337,7 @@ menunya = `╭─❒ 「 Bot Info 」 ❒
 ├ ${prefix}demote [ _@tag_ ]
 ├ ${prefix}antilink [ _on/off_ ]
 ├ ${prefix}antibug [ _on/off_ ]
-├ ${prefix} welcome [ _on/off_ ]
+├ ${prefix}welcome [ _on/off_ ]
 ├ ${prefix}creategrup [ _nama|@tag_ ]
 ├ ${prefix}tictactoe [ _@tag_ ]
 ├ ${prefix}delttt
@@ -1360,14 +1360,21 @@ menunya = `╭─❒ 「 Bot Info 」 ❒
 ├ ${prefix}sticktag [ _nama sticker_ ]
 ├ ${prefix}totag [ _reply media_ ]
 │
-├─❒ TOOLS
+├──❒ STICKER
+├ ${prefix}patrick
+├ ${prefix}bucinstick
+├ ${prefix}gawrgura
+├ ${prefix}dadu
+├ ${prefix}amongus
+├ ${prefix}anjing
+├ ${prefix}attp [_teks_]
+├ ${prefix}semoji [ _emoji_ ]
 ├ ${prefix}sticker
 ├ ${prefix}stickerwm [ _nama|author_ ]
 ├ ${prefix}takestick [ _nama|author_ ]
 ├ ${prefix}colong [ _reply sticker_ ]
-├ ${prefix}dadu
-├ ${prefix}semoji [ _emoji_ ]
-├ ${prefix}attp [ _teks_ ]
+│
+├─❒ TOOLS
 ├ ${prefix}toimg
 ├ ${prefix}tomp3 [ _reply video_ ]
 ├ ${prefix}tomp4 [ _reply sticker gif_ ]
@@ -1381,7 +1388,6 @@ menunya = `╭─❒ 「 Bot Info 」 ❒
 ├─❒ ASUPAN
 ├ ${prefix}asupan
 ├ ${prefix}asupan2
-├ ${prefix}asupant3
 ├ ${prefix}cecan
 ├ ${prefix}santuy
 ├ ${prefix}hijaber
@@ -1416,6 +1422,8 @@ menunya = `╭─❒ 「 Bot Info 」 ❒
 ├ ${prefix}apakah
 ├ ${prefix}bisakah
 ├ ${prefix}citacita
+├ ${prefix}cerpen
+├ ${prefix}ceritahoror
 ├ ${prefix}caripesan [ _teks|jumlah_ ]
 ├ ${prefix}slots
 ├ ${prefix}suit [ _gunting/batu/kertas_ ]
@@ -1694,6 +1702,12 @@ menu = `❏ 「 \`\`\`MENU OTHER\`\`\` 」
 ├ ${prefix}suit [ _gunting/batu/kertas_ ]
 ├ ${prefix}tag [ _nomor_ ]
 ├ ${prefix}tagme
+├ ${prefix}patrick
+├ ${prefix}bucinstick
+├ ${prefix}gawrgura
+├ ${prefix}dadu
+├ ${prefix}amongus
+├ ${prefix}anjing
 ├ ${prefix}tts [ _kodebhs teks_ ]
 ├ ${prefix}readmore [ _teks1|teks2_ ]
 ├ ${prefix}fitnahpc [ _nomor|teks1|teks2_ ]
@@ -1713,7 +1727,6 @@ menu = `❏ 「 \`\`\`MENU OTHER\`\`\` 」
 ├ ${prefix}stickerwm [ _nama|author_ ]
 ├ ${prefix}takestick [ _nama|author_ ]
 ├ ${prefix}colong [ _reply sticker_ ]
-├ ${prefix}dadu
 ├ ${prefix}semoji [ _emoji_ ]
 ├ ${prefix}attp [ _teks_ ]
 ├ ${prefix}toimg
@@ -1979,7 +1992,7 @@ break
 case 'meme':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 sticWait(from)
-anu = await fetchJson(`https://psyco-api.herokuapp.com/api/others/darkjokes?apikey=GratisanMuluAnjing`)
+anu = await fetchJson(`https://psyco-api.herokuapp.com/api/others/darkjokes?apikey=PsycoBOTZ`)
 buff = await getBuffer(anu.result.result)
 gbutsan = [{buttonId:`meme`,buttonText:{displayText:'LANJUT➡️'},type:1}]
 mhan = await denz.prepareMessage(from, buff, image, {thumbnail: buff})
@@ -2811,7 +2824,7 @@ for (let i of ownerNumber) {
 const vname = denz.contacts[i] != undefined ? denz.contacts[i].vname || denz.contacts[i].notify : undefined
 ini_list.push({
 "displayName": `Developer ${NamaBot}`,
-"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;KurrXd;;;\nFN:${vname ? `${vname}` : `${denz.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;NIZAM;;;\nFN:${vname ? `${vname}` : `${denz.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
 denz.sendMessage(from, {
@@ -2853,9 +2866,30 @@ break
 		case 'sc':
 		case 'sewabot':
 		case 'sourcecode':
-		anu =`*P S Y C O  B O T SEWABOT*
-		15K PERMANEN BWANG:) RUN RDP 24JAM DAN SELALU UPDATE	FITUR
-		MINAT PC OWNER SAJA`
+		anu =`         IKLAN BOTZ
+      
+KEUNTUNGAN BOTZ
+▢ BISA JAGA GRUP DARI LINK
+▢ BISA BIKIN STIKER TEKS,VIDIO DAN GAMBAR
+▢ BISA NYAPA TAMU YG MASUK
+▢ BISA PLAY AUDIO DAN VIDIO
+▢ BISA JADI ADMIN BERBER
+
+KELEBIHAN BOTZ
+▢ ON 24JAM KALAU GK DELAY
+▢ SELALU UPDATE FITUR 
+▢ BOT NO PASARAN
+
+LIST HARGA SEWA BOTZ
+▢ PERHARI 2K
+▢ PERMINGGU 5K
+▢ PERBULAN 15K
+▢ PERMANEN ~35K~ *20K*
+MINAT HIBUNGI OWNER
+wa.me/6285643260438
+
+YG MAU TOP UP GAME MARI JOIN
+https://chat.whatsapp.com/FJdtdDteQkkBSXkAl44sey`
  buttons = [
 {buttonId: `menu`, buttonText: {displayText: 'BACK➡️'}, type: 1},
 {buttonId:`donasi`,buttonText:{displayText:'💗DONASI💗'},type:1},
@@ -2940,7 +2974,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
       {
         "urlButton": {
           "displayText": `Script ${NamaBot}`,
-          "url": "https://github.com/KurrXd"
+          "url": "https://github.com/PinoRecode"
         },
         "index": 0
       }
@@ -3351,7 +3385,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 		case 'artimimpi':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 				if (args.length < 1) return reply('Teksnya?')
-anu = await fetchJson(`https://psyco-api.herokuapp.com/api/primbon/artimimpi?apikey=GratisanMuluAnjing&query=${body.slice(11)}`)
+anu = await fetchJson(`https://psyco-api.herokuapp.com/api/primbon/artimimpi?apikey=PsycoBOTZ&query=${body.slice(11)}`)
 teks = anu.result
 reply(teks)
 break
@@ -3406,6 +3440,25 @@ break
 					buff = await getBuffer(anu.result.avatar_url)
 					denz.sendMessage(from, buff, image, {quoted: ftok, caption: gstalk})
 					break 
+            case 'cerpen':
+		if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/cerpen?apikey=${setting.lolkey}`)
+                    get_result = get_result.result
+                    ini_txt = `Title : ${get_result.title}\n`
+                    ini_txt += `Creator : ${get_result.creator}\n`
+                    ini_txt += `Story :\n${get_result.cerpen}`
+                    denz.sendMessage(from, buff, image, {quoted: ftok, caption: ini_txt})
+                    break
+case 'ceritahoror':
+       if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/ceritahoror?apikey=${setting.lolkey}`)
+                    get_result = get_result.result
+                    ini_txt = `Title : ${get_result.title}\n`
+                    ini_txt += `Desc : ${get_result.desc}\n`
+                    ini_txt += `Story :\n${get_result.story}\n`
+                    thumbnail = await getBuffer(get_result.thumbnail)
+                    denz.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
+                     break 
 					case 'infogempa':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 					anu = await fetchJson(`https://bx-hunter.herokuapp.com/api/info/gempa?apikey=${HunterApi}`, {method: 'get'})
@@ -3414,12 +3467,6 @@ break
 					buff = await getBuffer(anu.result.Map)
 					denz.sendMessage(from, buff, image, {quoted: ftok, caption: gempa})
 					break 
-				case 'dadu':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-			random = Math.floor(Math.random() * 6) + 1
-		damdu = fs.readFileSync(`./sticker/${random}.webp`)
-			denz.sendMessage(from, damdu, sticker, {quoted: mek})
-			break
 				case 'robot':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 encmedial = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -4194,6 +4241,18 @@ break
 		   sendWebp(from, `${link}`).catch(() => reply('gagal'))
            })
     	   break
+				
+				case 'bucinstick': // ===《 PIN MODZ 》===\\
+                  case 'gawrgura': // ===《 PINO MODZ 》===\\
+                  case 'patrick': // ===《 PINO MODZ 》===\\
+                  case 'dadu': // ===《 PINO MODZ 》===\\
+                  case 'amongus': // ===《 PINO MODZ 》===\\
+                  case 'anjing': // ===《 PINO MODZ 》===\\
+              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+                   anu = await getBuffer(`http://api.lolhuman.xyz/api/sticker/${command}?apikey=YTRAMLANID`)
+                    denz.sendMessage(from, anu, sticker, { quoted : mek})
+                    break
+				
 				case 'citacita':
               const cita =['https://api-psycobotz.000webhostapp.com/citacita/citacita1.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita2.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita3.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita4.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita5.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita6.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita7.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita8.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita9.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita10.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita11.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita12.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita13.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita14.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita15.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita16.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita17.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita18.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita19.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita20.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita21.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita22.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita23.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita24.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita25.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita26.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita27.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita28.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita29.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita30.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita31.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita32.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita33.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita34.mp3','https://api-psycobotz.000webhostapp.com/citacita/citacita35.mp3']
               const cita3 = cita[Math.floor(Math.random() * cita.length)]
