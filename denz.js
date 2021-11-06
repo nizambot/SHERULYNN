@@ -3425,8 +3425,7 @@ break
 		case 'artimimpi':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 				if (args.length < 1) return reply('Mimpi Mu Apa?')
-tod = ${body.slice(12)}
-anu = await fetchJson(`https://psyco-api.herokuapp.com/api/primbon/artimimpi?apikey=PsycoBOTZ&query=${tod}`)
+anu = await fetchJson(`https://psyco-api.herokuapp.com/api/primbon/artimimpi?apikey=PsycoBOTZ&query=${body.slice(12)}`)
 teks = `➻ *MIMPI* : ${anu.result}`
 reply(teks)
 break
